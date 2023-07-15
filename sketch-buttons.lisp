@@ -1,6 +1,26 @@
 (defpackage #:sketch-buttons
   (:use #:cl)
-  (:local-nicknames (#:s #:sketch)))
+  (:local-nicknames (#:s #:sketch))
+  (:export #:button
+           #:on-press
+           #:on-release
+           #:on-hover
+           #:on-unhover)
+  (:export #:button-contains
+           #:button-event
+           #:button-motion-event
+           #:button-press
+           #:button-release
+           #:button-hover
+           #:button-unhover)
+  (:export #:bind
+           #:binds)
+  (:export #:with-buttons)
+  (:export #:rectangle-button
+           #:brect)
+  (:export #:ellipse-button
+           #:bellipse
+           #:bcircle))
 
 (in-package #:sketch-buttons)
 
